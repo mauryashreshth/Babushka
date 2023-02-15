@@ -1,58 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <title>Lemniscate</title>
-    <link rel="shortcut icon" href="pp.jpg" type="image/x-icon">
+	<title>Weather Forecast</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="shortcut icon" href="icon.png.png" type="image/x-icon">
 </head>
-
 <body>
-    <nav class=" bg-red-800 font-mono flex justify-between">
-        <div class="img flex space-x-2 cursor-pointer"><img src="pp.jpg" class="h-12 p-2 px-3 rounded-2xl" alt=""
-                srcset="">
-            <span class="font-sans pt-2.5 text-slate-200">Lemniscate</span>
-        </div>
-        <ul class="space-x-5 flex justify-end mr-20">
-            <a href="http://nsit.ac.in" style="text-decoration: none;" target="_blank">
-                <li
-                    class="mx-5 px-4 py-3 my-0 cursor-pointer text-white hover:bg-white hover:text-sky-900 hover:text-lg">
-                    Home</li>
-            </a>
-            <li class="mx-6 px-4 py-3 my-0 cursor-pointer text-white hover:bg-white hover:text-sky-900 hover:text-lg">
-                About</li>
-            <li class="mx-6 px-4 py-3 my-0 cursor-pointer text-white hover:bg-white hover:text-sky-900 hover:text-lg">
-                Contact Us</li>
-        </ul>
-    </nav>
-    <main>
-        <div class="main bg-slate-300 h-96 flex justify-center items-center">
-            <div class="font-thin">
-                <p class="text-4xl flex justify-center">ESCAM</p>
-                <p class="text-sm my-5 flex justify-center">"Why are we still here, just to suffer?" - Some ECAM guy</p>
-                <div class="buttons flex justify-center pt-5"><button
-                        class="bg-yellow-500 text-sm text-black rounded-xl mx-5 p-3 hover:bg-yellow-400 hover:border-cyan-100 hover:border-2"><a
-                            href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">Get Started</a></button>
-                    <button
-                        class="bg-yellow-500 text-sm text-black rounded-xl mx-5 p-3 hover:bg-yellow-400 hover:border-cyan-100  hover:border-2"><a
-                            href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">Know More</a></button>
-                </div>
-                <!-- <div class="flex justify-center items-center m-2 p-2">
-                    <img src="pp.jpg" width="50" height="50">
-                </div> -->
-            </div>
-
-        </div>
-    </main>
-    <footer>
-        <div class="footer h-36 bg-black text-slate-100 font-extralight flex justify-center">
-            <div class="textbox text-center py-14">Created by Team Lemniscate (Shreshth)</div>
-        </div>
-    </footer>
-
+	<div class="container">
+		<h1>Weather Forecast</h1>
+		<div class="search-container">
+			<input type="text" id="search-box" placeholder="Enter city name">
+			<button id="search-button">Search</button>
+		</div>
+		<div id="weather-info"></div>
+	</div>
+	<script src="script.js"></script>
 </body>
-
 </html>
