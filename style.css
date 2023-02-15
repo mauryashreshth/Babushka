@@ -15,14 +15,17 @@
 }
 
 body {
-	background-color: #eee;
 	font-family: sans-serif;
 	display: flex;
+	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	background-color: #eee;
 	height: 100vh;
 }
-
+.main{
+	background-color: #eee;
+}
 .animate-on-load {
 	animation-name: slide-in;
 	animation-duration: 1s;
@@ -30,17 +33,19 @@ body {
 }
 
 .container {
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	font-size: medium;
 	opacity: 0;
 	transition: opacity 1s ease-in-out;
 	animation-name: slide-in;
 	animation-duration: 1s;
 	animation-timing-function: ease-out;
-	max-width: 600px;
+	max-width: 80vw;
 	margin: 0 auto;
-	padding: 50px 50px 50px 50px;
+	padding: 5vh 5vw 10vh 5vw;
 	background-color: #fff;
-	border-radius: 10px;
-	box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+	border-radius: 2vh;
+	box-shadow: 0 0 0.4vh rgba(0, 0, 0, 0.2);
 }
 
 .container.active {
@@ -49,30 +54,31 @@ body {
 
 h1 {
 	text-align: center;
-	margin-bottom: 50px;
+	margin-bottom: 5vh;
 }
 
 .search-container {
 	display: flex;
-	margin-bottom: 20px;
+	margin-bottom: 5vh;
 }
 
 #search-box {
+	
 	flex-grow: 1;
-	padding: 10px;
+	padding: 0.75vw;
 	border: medium;
-	margin-right: 20px;
+	margin-right: 1.5vw;
 	text-decoration: black;
 	background-color: aliceblue;
-	border-radius: 5px 5px 5px 5px;
+	border-radius: 0.2vh 0.2vw 0.2vh 0.2vw;
 }
 
 #search-button {
-	padding: 10px;
+	padding: 0.5vw;
 	border: none;
 	background-color: #007bff;
 	color: #fff;
-	border-radius: 5px 5px 5px 5px;
+	border-radius: 1vw 1vh;
 	cursor: pointer;
 }
 
@@ -84,8 +90,8 @@ h1 {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	padding: 15px;
-	border-radius: 5px 5px 5px 5px;
+	padding: 1.5vh;
+	border-radius: 10vw;
 	background-color: #f1f1f1;
 }
 
