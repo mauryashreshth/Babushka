@@ -1,19 +1,24 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>Weather Forecast</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="shortcut icon" href="icon.png" type="image/x-icon">
-</head>
-<body>
-	<div class="container">
-		<h1>Weather Forecast</h1>
-		<div class="search-container">
-			<input type="text" id="search-box" placeholder="Enter city name">
-			<button id="search-button">Search</button>
-		</div>
-		<div id="weather-info"></div>
-	</div>
-	<script src="script.js"></script>
-</body>
+  <head>
+    <title>Weather Forecast</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="shortcut icon" href="icon.png.png" type="image/x-icon" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Live<br />Weather Forecast</h1>
+      <div class="search-container">
+        <input type="text" id="search-box" placeholder="Enter city name" />
+        <button id="search-button">Search</button>
+      </div>
+      <div id="weather-info">
+        <p>The information will be displayed here</p>
+        <div id="loading-icon-container">
+          <div class="loading-icon"></div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
 </html>
