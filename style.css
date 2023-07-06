@@ -20,11 +20,11 @@ body {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	background-color: #ffffff5d;
+	/* background-color: #ffffff1d; */
 	height: 100vh;
 }
 .main{
-	background-color: #eee;
+	background-color: #eeeeee46;
 }
 .animate-on-load {
 	animation-name: slide-in;
@@ -43,7 +43,7 @@ body {
 	max-width: 80vw;
 	margin: 0 auto;
 	padding: 5vh 5vw 10vh 5vw;
-	background-color: #fff;
+	background-color: #ffffff18;
 	border-radius: 2vh;
 	box-shadow: 0 0 0.4vh rgba(0, 0, 0, 0.2);
 }
