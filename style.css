@@ -1,4 +1,3 @@
-/* Original CSS for computer display */
 * {
 	margin: 0;
 	padding: 0;
@@ -20,7 +19,7 @@
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	background-color: rgb(102, 99, 99);
+	background-size: cover;
 	height: 100vh;
   }
   
@@ -78,8 +77,8 @@
   #search-button {
 	padding: 0.5vw;
 	border: none;
-	background-color: #007bff;
-	color: #fff;
+	background-color: #0070e8;
+	color: #f0eded;
 	border-radius: 1vw 1vh;
 	cursor: pointer;
   }
@@ -94,7 +93,7 @@
 	align-items: center;
 	padding: 2vh;
 	border-radius: 10vw;
-	background-color: #f1f1f1;
+	background-color: #fffcfc;
 	margin-top: 2vh;
   }
   

@@ -56,8 +56,8 @@ window.onload = function () {
                 <h2>${cityName}</h2>
                 <div>
                     <img src="${iconUrl}" alt="${description}"><br>
-                    <h4 class ='light'>&nbsp&nbsp${temperature}&deg;C</h5>
-                    <h4 class ='light'>&nbsp&nbsp${description}</h5>
+                    <h4 class ='light'>${temperature}&deg;C</h5>
+                    <h4 class ='light'>${description}</h5>
                 </div>
             `;
         } else {
