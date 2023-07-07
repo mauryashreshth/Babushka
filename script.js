@@ -5,10 +5,8 @@ window.onload = function () {
   const searchButton = document.getElementById("search-button");
   const weatherInfo = document.getElementById("weather-info");
   searchButton.addEventListener("click", () => {
-    // showMessage(800);
-
-    const cityName = searchBox.value;
-    const apiKey = "2fb2c57a6255bd20f07aa856d18ef498"; // replace with your API key
+    let cityName = searchBox.value;
+    const apiKey = "2fb2c57a6255bd20f07aa856d18ef498";
     const url = `https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${apiKey}&units=metric`;
 
     fetch(url)
@@ -23,10 +21,11 @@ window.onload = function () {
           const endpointURL = "https://api.unsplash.com/photos/random";
 
           // Set the search query parameter to 'clouds'
-          const query = `${description} weather`;
-          const searchURL = `${endpointURL}?query=${query}`;
+          const result = description.replace(/ /g, ",");
+          const query = `${result},weather`;
+          const searchURL = `${endpointURL}?query=${query}&exclude=people`;
+          console.log(`URL : ${searchURL}`);
 
-          console.log(`Query name: ${query}`);
           // Set the headers object with your access key
           const headers = {
             Authorization: `Client-ID ${accessKey}`,
@@ -42,6 +41,7 @@ window.onload = function () {
               const imageUrl = imageData.urls.regular;
 
               // Set the background image of the HTML element
+              body.classList.add("transition-bg");
               body.style.background = `url(${imageUrl}) no-repeat center center fixed`;
               body.style.backgroundSize = "cover";
             })
@@ -51,13 +51,13 @@ window.onload = function () {
 
           const iconCode = data.weather[0].icon;
           const iconUrl = `http://openweathermap.org/img/w/${iconCode}.png`;
-          console.log("IMAGE NAME : ", description);
+          cityName = cityName.charAt(0).toUpperCase() + cityName.slice(1);
           weatherInfo.innerHTML = `
                 <h2>${cityName}</h2>
                 <div>
-                    <img src="${iconUrl}" alt="${description}">
-                    <p>${temperature}&deg;C</p>
-                    <p>${description}</p>
+                    <img src="${iconUrl}" alt="${description}"><br>
+                    <h4 class ='light'>&nbsp&nbsp${temperature}&deg;C</h5>
+                    <h4 class ='light'>&nbsp&nbsp${description}</h5>
                 </div>
             `;
         } else {
@@ -80,4 +80,3 @@ window.onload = function () {
     };
   });
 };
-
