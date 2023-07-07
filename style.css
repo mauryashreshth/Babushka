@@ -103,7 +103,18 @@
 	}
   }
     
-  /* #loading-icon-container {
+  /* 
+  .loading-icon {
+	width: 60px;
+	height: 60px;
+	margin: auto;
+	border-radius: 50%;
+	border: 5px solid #333;
+	border-top-color: #fff;
+	animation: spin 1s ease-in-out infinite;
+ 
+ 
+  #loading-icon-container {
 	display: none;
 	position: fixed;
 	top: 0;
@@ -114,14 +125,6 @@
 	z-index: 9999;
   }
   
-  .loading-icon {
-	width: 60px;
-	height: 60px;
-	margin: auto;
-	border-radius: 50%;
-	border: 5px solid #333;
-	border-top-color: #fff;
-	animation: spin 1s ease-in-out infinite;
   } */
   
   

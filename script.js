@@ -20,7 +20,7 @@ window.onload = function () {
           // Set the endpoint URL for the desired API request
           const endpointURL = "https://api.unsplash.com/photos/random";
 
-          // Set the search query parameter to 'clouds'
+          // Set the search query parameter
           const result = description.replace(/ /g, ",");
           const query = `${result},weather`;
           const searchURL = `${endpointURL}?query=${query}&exclude=people`;
