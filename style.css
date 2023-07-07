@@ -1,3 +1,4 @@
+/* Original CSS for computer display */
 * {
 	margin: 0;
 	padding: 0;
@@ -19,11 +20,13 @@
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	background-color: rgb(102, 99, 99);
 	height: 100vh;
   }
+  
   body.transition-bg {
 	transition: background-image 1.0s ease-in-out;
-  }  
+  }
   
   .animate-on-load {
 	animation-name: slide-in;
@@ -35,7 +38,7 @@
 	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 	font-size: medium;
 	opacity: 0.5;
-	background-color: rgba(255, 255, 255, 0.8);
+	background-color: rgba(255, 255, 255, 0.5);
 	transition: opacity 1s ease-in-out;
 	animation-name: slide-in;
 	animation-duration: 1s;
@@ -58,8 +61,8 @@
   
   .search-container {
 	display: flex;
-	justify-content: center; /* Center the search box horizontally */
-	align-items: center; /* Center the search box vertically */
+	justify-content: center;
+	align-items: center;
 	margin-bottom: 5vh;
   }
   
@@ -67,9 +70,9 @@
 	flex-grow: 1;
 	padding: 0.75vw;
 	border: medium;
-	margin-right: 1.5vw;
+	margin-right: 1vw;
 	background-color: aliceblue;
-	border-radius: 0.2vh 0.2vw 0.2vh 0.2vw;
+	border-radius: 1vw;
   }
   
   #search-button {
@@ -92,39 +95,45 @@
 	padding: 2vh;
 	border-radius: 10vw;
 	background-color: #f1f1f1;
-	margin-top: 2vh; /* Add some top margin for spacing */
+	margin-top: 2vh;
   }
+  
   .light {
 	font-weight: lighter;
   }
+  
   @keyframes spin {
 	to {
 	  transform: rotate(360deg);
 	}
   }
-    
-  /* 
-  .loading-icon {
-	width: 60px;
-	height: 60px;
-	margin: auto;
-	border-radius: 50%;
-	border: 5px solid #333;
-	border-top-color: #fff;
-	animation: spin 1s ease-in-out infinite;
- 
- 
-  #loading-icon-container {
-	display: none;
-	position: fixed;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	background-color: rgba(255, 255, 255, 0.8);
-	z-index: 9999;
+  
+  /* Media query for mobile screens */
+  @media (max-width: 767px) {
+	body {
+	  height: auto;
+	}
+  
+	.container {
+	  max-width: 90vw;
+	  width: 90%;
+	  padding: 3vh 3vw 6vh 3vw;
+	}
+  
+	#search-box {
+	  padding: 3vh;
+	  margin-right: 2vh;
+	  border-radius: 2vh;
+	}
+  
+	#search-button {
+	  padding: 2vh;
+	  border-radius: 2vh;
+	}
+  
+	#weather-info {
+	  padding: 4vh;
+	  margin-top: 3vh;
+	}
   }
-  
-  } */
-  
   
